@@ -1,0 +1,230 @@
+@mixin headerelem {
+    color: #fff;
+}
+@mixin d-flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+@mixin d-flex-col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+header{
+    @include headerelem;
+}
+.wrapper-head{
+    background-image: url("../img/bgfirst.png");
+    background-size: cover;
+    height: 782px;
+}
+.btn-outline-success{
+    color: #fff;
+    border-color: #fff;
+}
+.navbar-brand{
+    font-size: 18px;
+}
+.navbar-collapse{
+    font-size: 14px;
+    justify-content: center;
+}
+.collapse{
+    font-size: 14px;
+    justify-content: center;
+}
+.navbar-nav{
+   margin-right: 20%;
+   margin-left: 10%;
+    text-transform: uppercase;
+
+}
+.btn-outline-success{
+    font-size: 14px;
+    &:hover{
+        background-color: red;
+        border-color: black;
+    }
+}
+ .navbar>.container-fluid{
+     justify-content: space-between;
+ }
+ .welcome{
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+    margin-top: 117px;
+    padding-bottom: 187px;
+    a{
+        color: #ED4C5C;
+        background-color: #fff;
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+        padding: 16px 26px 16px 26px;
+        border-radius: 6px;
+
+    }
+ }
+ .name{
+     font-size: 2.7rem;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+ .descrname{
+     font-size: 1.0rem;
+     font-weight: 500;
+     margin-bottom: 40px;
+ }
+ .simplyapp{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-around;
+     padding-top: 94px;
+     padding-bottom: 94px;
+     a{
+         font-size: 14px;
+         color: #ED4C5C;
+         font-weight: 400;
+         text-decoration: none;
+     }
+ }
+ .leftblock{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .headofleft{
+     font-size: 36px;
+     font-weight: 500;
+     line-height: 49px;
+ }
+ .descrofleft{
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 19px;
+ }
+ .rightblock{
+     img{
+         width: 100%;
+     }
+ }
+ .possibility{
+     background-color: #FAFAFA;
+     padding-bottom: 224px;
+     p{
+         text-align: center;
+     }
+ }
+ .possibilityP{
+     padding-top: 64px;
+     font-size: 36px;
+     font-weight: 600;
+ }
+ .cards{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
+ .card{
+     width: 350px;
+
+     img{
+         width: 350px;
+         z-index: 10;
+     }
+ }
+ .cardindex{
+     z-index: 100;
+     position: absolute;
+     background-color: #fff;
+     border-radius: 8px;
+     width: 80%;
+     margin-top: 157px;
+     margin-left: 29px;
+     margin-right: 29px;
+ }
+ .cardheadtxt{
+     margin-top: 26px;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 21px;
+ }
+ .carddescr{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.techheadtxt{
+    font-size: 36px;
+    font-weight: 600;
+    padding-top: 63px;
+    text-align: center;
+    padding-bottom: 52px;
+}
+.techcards{
+    @include d-flex-row;
+    justify-content: space-evenly;
+    padding-bottom: 104px;
+    text-align: center;
+}
+.economymoney-wrapper{
+    background-color: #ED4C5C;
+}
+.storeico{
+    @include d-flex-row;
+    a{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+.messageme-wrapper{
+    .btn-message{
+        background-color: #ED4C5C;
+        color: #fff;
+        width: 160px;
+        height: 50px;
+        font-size: 14px;
+        padding: 16px 26px 16px 26px;
+        border-radius: 6px;
+    }
+    .form-control{
+        margin-bottom: 24px;
+        width: 100%;
+    }
+    padding-bottom: 123px;
+    padding-top: 159px;
+}
+footer{
+    background-color: #FAFAFA;
+}
+
+@media screen and (max-width: 455px) {
+    .leftblock{
+        text-align: center;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+ .headofleft{
+    font-size: 24px;
+}
+.descrofleft{
+    font-size: 14px;
+}
+    .rightblock{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 80%;
+        }
+    }
+    }   
